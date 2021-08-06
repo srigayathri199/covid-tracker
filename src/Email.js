@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './Email.css'
 import SendIcon from '@material-ui/icons/Send';
 
+
 function Email() {
+    const inpRef = useRef('');
+    const sendPrompt = function(){
+        alert('Message Successfully sent!!🎉🎉');
+        console.log(inpRef.current.value);
+
+    }
     return (
         <div className="email">
             <div className="center">
@@ -13,10 +20,10 @@ function Email() {
                     Don't worry.Hope You get well soon.Share your do's and dont's to help others.
                 </p>
                 <div className="mailbox">
-                    Enter your email
+                    Enter your Message
                     <form action="mailto:srigayathrikunta999@gmail.com" method="post" enctype="text/plain">
-                        <input className="msg" type="mail" />
-                        <button className="send">
+                        <input ref={inpRef} className="msg" type="text" />
+                        <button onClick={sendPrompt} className="send">
                        <SendIcon />
                         </button>
                         
