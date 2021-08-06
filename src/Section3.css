@@ -82,7 +82,7 @@
         justify-content: space-between;
     }
     .section3--boxex>div {
-        width: 30%;
+        width: auto;
     }
     .mid3>.initialMap {
         width: 100%;

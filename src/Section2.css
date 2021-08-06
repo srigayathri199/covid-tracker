@@ -34,8 +34,8 @@
 }
 
 .back_circle {
-    width: 380px;
-    height: 380px;
+    width: 320px;
+    height: 320px;
     border: 2px dashed #fece00;
     border-radius: 50%;
     position: relative;
@@ -43,7 +43,7 @@
 
 .sec2_lungs {
     border-radius: 50%;
-    width: 300px;
+    width: 250px;
     position: absolute;
     top: 50%;
     left: 50%;
