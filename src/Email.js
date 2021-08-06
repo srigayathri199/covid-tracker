@@ -7,7 +7,7 @@ function Email() {
     const inpRef = useRef('');
     const sendPrompt = function(){
         alert('Message Successfully sent!!🎉🎉');
-        console.log(inpRef.current.value);
+        inpRef.current.value=''
 
     }
     return (
