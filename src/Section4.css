@@ -1,0 +1,89 @@
+.table_graph {
+    margin-top: 10px;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.table_div,
+.graph_div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.graph_hd {
+    margin-left: 28px;
+    margin-bottom: 20px;
+}
+
+.graph_div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.table {
+    overflow: scroll;
+    overflow-x: hidden;
+    border: 0.5px solid rgba( 255, 255, 255, 0.1);
+    background: rgba( 255, 255, 255, 0.10);
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+.table tr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.table td {
+    padding: 0.5rem;
+}
+
+.table tr:nth-of-type(odd) {
+    background: rgba( 255, 255, 255, 0.10);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 1.5px);
+    -webkit-backdrop-filter: blur( 1.5px);
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+.graph {
+    margin: 0 0px 0 28px;
+    background: rgba( 255, 255, 255, 0.3);
+    padding: 30px 20px 30px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    color: white;
+    backdrop-filter: blur( 1.5px);
+}
+
+.graph>canvas {
+    height: 338px;
+}
+
+@media (max-width:663px) {
+    .table_graph {
+        flex-direction: column;
+        height: auto;
+    }
+    .table_div,
+    .graph_div {
+        width: 100%;
+    }
+    .table {
+        display: block;
+        overflow: auto;
+        max-height: 400px;
+    }
+    .graph_div {
+        margin-top: 50px;
+    }
+    .graph_hd,
+    .graph {
+        margin-left: 0;
+    }
+}

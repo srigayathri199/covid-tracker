@@ -1,0 +1,93 @@
+.sec3_header {
+    width: 100%;
+    background-color: #2f57bf;
+    padding-top: 80px;
+    color: white;
+    padding-bottom: 100px;
+}
+
+.sec3_heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.mid3 {
+    max-width: 1170px;
+    margin: auto;
+    width: 90%;
+    max-width: 1170px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    text-align: center;
+    width: 100%;
+    margin: 30px auto 80px;
+}
+
+.app_dropdown {
+    width: auto;
+    background: rgba( 255, 255, 255, 0.10);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 1.5px);
+    -webkit-backdrop-filter: blur( 1.5px);
+    border-radius: 5px;
+}
+
+.sec3_boxes {
+    display: flex;
+    width: 100%;
+    margin-bottom: 80px;
+    align-items: flex-start;
+}
+
+.section3--boxex {
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.section3--boxex>div {
+    width: 220px;
+}
+
+.heads {
+    display: flex;
+    justify-content: space-around;
+}
+
+.MuiSelect-icon {
+    color: white !important;
+}
+
+.table_hd {
+    margin-bottom: 20px;
+}
+
+
+/* .infoBoxes  */
+
+@media (max-width:663px) {
+    .sec3_boxes {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+    .section3--boxex {
+        width: 100%;
+        margin-top: 30px;
+        justify-content: space-between;
+    }
+    .section3--boxex>div {
+        width: 30%;
+    }
+    .mid3>.initialMap {
+        width: 100%;
+    }
+    .table_hd {
+        margin-bottom: 20px;
+    }
+}
